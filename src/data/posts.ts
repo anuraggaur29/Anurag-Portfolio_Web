@@ -3,44 +3,44 @@ import { Post } from '@/types';
 export const posts: Post[] = [
   {
     id: 1,
-    title: 'How I approach a new web project',
+    title: 'Building an end-to-end ML classification pipeline',
     publishedAt: 'April 2026',
     thumbnailUrl: '/images/posts/post-thumbnail-1.png',
     imageUrl: '/images/posts/post-01.png',
-    authorName: 'Anurag Gaur',
+    authorName: 'Anurag',
     content: `
-      <p>I start by understanding the goal of the page, the users who will visit it, and the actions they should be able to complete without friction.</p>
-      <p>After that, I break the project into layout, components, data, states, and deployment. This keeps the work clear and makes it easier to debug.</p>
-      <blockquote>Good projects are easier to improve when the first version is organized.</blockquote>
-      <p>For portfolio work, I focus on responsive design, readable code, meaningful project descriptions, and simple deployment instructions.</p>
+      <p>My news authenticity project follows the full machine learning lifecycle: data ingestion, preprocessing, TF-IDF feature extraction, training, evaluation, and deployment.</p>
+      <p>I compared multiple classification algorithms and selected Logistic Regression based on performance analysis, reaching 91.2% accuracy on 20,000+ news samples.</p>
+      <blockquote>The strongest ML projects are useful beyond the notebook.</blockquote>
+      <p>That is why I connected the model to a Telegram chatbot so non-technical users could get real-time predictions without manually checking every article.</p>
     `,
   },
   {
     id: 2,
-    title: 'What I am learning in full stack development',
+    title: 'Using SQL and Python to understand revenue funnels',
     publishedAt: 'March 2026',
     thumbnailUrl: '/images/posts/post-thumbnail-2.png',
     imageUrl: '/images/posts/post-02.png',
-    authorName: 'Anurag Gaur',
+    authorName: 'Anurag',
     content: `
-      <p>My current focus is strengthening the connection between frontend interfaces and backend services.</p>
-      <p>On the frontend, I practice React, Next.js, TypeScript, component structure, and Tailwind CSS. On the backend, I work with REST APIs, routing, models, authentication ideas, and database basics.</p>
-      <blockquote>The goal is to build projects that are not only visible, but understandable.</blockquote>
-      <p>I also keep improving Git workflow, documentation, and deployment so each project is ready to share.</p>
+      <p>For funnel analysis, I combine SQL for efficient data slicing with Python for reusable metric calculations and reporting.</p>
+      <p>In the e-commerce analysis project, I processed 12,500+ user sessions, created Browse to Cart to Purchase logic, and identified a 38% cart drop-off.</p>
+      <blockquote>Good analysis should lead to a decision, not just a chart.</blockquote>
+      <p>The final recommendations were projected to improve conversion rate by 8-12%, connecting data work directly to business impact.</p>
     `,
   },
   {
     id: 3,
-    title: 'Why clean portfolio projects matter',
+    title: 'Why clean automation matters in analytics',
     publishedAt: 'February 2026',
     thumbnailUrl: '/images/posts/post-thumbnail-3.png',
     imageUrl: '/images/posts/post-03.png',
-    authorName: 'Anurag Gaur',
+    authorName: 'Anurag',
     content: `
-      <p>A portfolio is more than a list of screenshots. It should explain the problem, the role, the stack, and the choices made during development.</p>
-      <p>Clean project pages help visitors understand the thinking behind the work and make the developer easier to evaluate.</p>
-      <blockquote>Clear work builds trust faster than vague claims.</blockquote>
-      <p>That is why I document features, tools, challenges, and next improvements for every serious project I build.</p>
+      <p>Automation is valuable when it turns repetitive manual work into reliable scripts that can be reused and extended.</p>
+      <p>In my Academic Performance Analyzer, I used Python and Pandas to process 500+ student records and generate structured reports.</p>
+      <blockquote>Clean scripts make repeated work faster, safer, and easier to explain.</blockquote>
+      <p>The project reduced manual effort by about 80% while surfacing subject-level performance trends.</p>
     `,
   },
 ];

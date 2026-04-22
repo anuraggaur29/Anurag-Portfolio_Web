@@ -26,7 +26,9 @@ const Contact = () => {
             <p className="mt-2">I would love to hear from you.</p>
             <div className="mt-10 text-gray-400">
               <p>{profile.location}</p>
-              <p className="mt-4">{profile.email}</p>
+              <p className="mt-4">{profile.phone}</p>
+              <p>{profile.email}</p>
+              <p>{profile.linkedin.replace('https://www.', '')}</p>
               <p>{profile.github.replace('https://', '')}</p>
             </div>
           </div>

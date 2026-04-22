@@ -2,27 +2,25 @@ import { Education } from '@/types';
 
 export const educations: Education[] = [
   {
-    degree: 'B.Tech / Computer Science Track',
-    school: 'University coursework',
+    degree: 'B.E. Computer Science (AI & ML), CGPA: 8.1',
+    school: 'Chandigarh University, Chandigarh',
     startDate: '2023',
-    endDate: 'Present',
+    endDate: '2027',
     description:
-      'Focused on software engineering fundamentals, full stack development, databases, and practical project work.',
+      'Undergraduate program focused on artificial intelligence, machine learning, programming, databases, and software fundamentals.',
   },
   {
-    degree: 'Full Stack Development',
-    school: 'Hands-on learning',
-    startDate: '2024',
-    endDate: 'Present',
-    description:
-      'Learning production-style workflows across Git, React, Next.js, Node.js, Express, MongoDB, and deployment.',
+    degree: 'Class XII - 84%',
+    school: 'Senior secondary education',
+    startDate: '',
+    endDate: '',
+    description: 'Built strong fundamentals in mathematics, analytical thinking, and science-oriented problem solving.',
   },
   {
-    degree: 'Programming Foundations',
-    school: 'Self study and labs',
-    startDate: '2022',
-    endDate: 'Present',
-    description:
-      'Strengthening JavaScript, TypeScript, C/C++, Python, problem solving, and clean code habits.',
+    degree: 'Class X - 88%',
+    school: 'Secondary education',
+    startDate: '',
+    endDate: '',
+    description: 'Developed a strong academic base and consistent learning discipline.',
   },
 ];

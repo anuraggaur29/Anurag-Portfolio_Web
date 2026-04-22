@@ -2,27 +2,27 @@ import { Experience } from '@/types';
 
 export const experiences: Experience[] = [
   {
-    jobTitle: 'Full Stack Developer',
-    company: 'Academic and personal projects',
+    jobTitle: 'ML Pipeline Developer',
+    company: 'News Authenticity Classification System',
+    startDate: '2026',
+    endDate: 'Present',
+    description:
+      'Built an end-to-end Python and Scikit-Learn pipeline across ingestion, preprocessing, TF-IDF features, model training, and Telegram chatbot deployment.',
+  },
+  {
+    jobTitle: 'Data Analyst',
+    company: 'E-commerce Funnel & Revenue Analysis',
+    startDate: '2025',
+    endDate: '2026',
+    description:
+      'Used Python, SQL, Pandas, and MySQL to analyze 12,500+ sessions, build funnel and cohort logic, and identify revenue growth opportunities.',
+  },
+  {
+    jobTitle: 'SQL & Automation Builder',
+    company: 'Academic analytics projects',
     startDate: '2024',
-    endDate: 'Present',
+    endDate: '2025',
     description:
-      'Building responsive web applications with React, Next.js, Node.js, REST APIs, and clean component-driven UI.',
-  },
-  {
-    jobTitle: 'Frontend Developer',
-    company: 'Portfolio and coursework builds',
-    startDate: '2023',
-    endDate: 'Present',
-    description:
-      'Creating accessible interfaces, reusable layouts, and polished landing pages using TypeScript, Tailwind CSS, and modern JavaScript.',
-  },
-  {
-    jobTitle: 'Problem Solver',
-    company: 'Computer science practice',
-    startDate: '2022',
-    endDate: 'Present',
-    description:
-      'Practicing data structures, algorithms, debugging, and project documentation to turn ideas into working software.',
+      'Created SQL analysis and Python automation scripts for customer behavior insights and academic performance reports.',
   },
 ];

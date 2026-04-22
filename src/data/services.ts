@@ -2,18 +2,18 @@ import { Service } from '@/types';
 
 export const services: Service[] = [
   {
-    name: 'Web Development',
-    description: 'Responsive websites and dashboards built with React, Next.js, TypeScript, and Tailwind CSS.',
+    name: 'Machine Learning',
+    description: 'End-to-end ML workflows with preprocessing, TF-IDF, model evaluation, and real-time prediction delivery.',
     image: '/images/services/web-development.png',
   },
   {
-    name: 'Backend APIs',
-    description: 'REST API foundations, authentication flows, database models, and clean server-side structure.',
+    name: 'Data Analysis',
+    description: 'Python, SQL, Pandas, Power BI, and Excel analysis for funnels, cohorts, retention, AOV, and CLV insights.',
     image: '/images/services/ui-ux.png',
   },
   {
-    name: 'Project Polish',
-    description: 'UI refinement, bug fixes, GitHub-ready documentation, and deployment preparation.',
+    name: 'Clean Automation',
+    description: 'Reusable Python scripts and SQL workflows that reduce manual effort and turn specifications into reports.',
     image: '/images/services/mobile-app.png',
   },
 ];

@@ -47,7 +47,7 @@ const ExperienceSection = () => {
                     <AcademicCap className="h-5" />
                   </span>
                   <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
-                    {education.startDate} - {education.endDate}
+                    {[education.startDate, education.endDate].filter(Boolean).join(' - ')}
                   </time>
                   <h3 className="mb-1 flex items-center text-lg font-semibold dark:text-gray-200">
                     {education.degree}

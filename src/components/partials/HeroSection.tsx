@@ -2,11 +2,11 @@ import { profile } from '@/data/profile';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useMemo, useState } from 'react';
-import { FiGithub, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
 import HeroBackground from './HeroBackground';
 
 const HeroSection = () => {
-  const roles = useMemo(() => ['Full Stack Developer', 'Frontend Developer', 'Problem Solver'], []);
+  const roles = useMemo(() => ['AI & ML Student', 'Python Developer', 'Data Analyst', 'Problem Solver'], []);
   const [roleIndex, setRoleIndex] = useState(0);
   const [visibleLetters, setVisibleLetters] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -55,11 +55,6 @@ const HeroSection = () => {
           </span>
         </div>
         <div className="mt-4 flex gap-5">
-          <Link legacyBehavior href={profile.instagram}>
-            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500" aria-label="Instagram">
-              <FiInstagram size={25} />
-            </a>
-          </Link>
           <Link legacyBehavior href={profile.linkedin}>
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500" aria-label="LinkedIn">
               <FiLinkedin size={25} />
@@ -68,6 +63,11 @@ const HeroSection = () => {
           <Link legacyBehavior href={`mailto:${profile.email}`}>
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500" aria-label="Email">
               <FiMail size={25} />
+            </a>
+          </Link>
+          <Link legacyBehavior href={`tel:${profile.phone.replace(/\s/g, '')}`}>
+            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500" aria-label="Phone">
+              <FiPhone size={25} />
             </a>
           </Link>
           <Link legacyBehavior href={profile.github}>

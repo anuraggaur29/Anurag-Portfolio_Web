@@ -17,6 +17,7 @@ const ContactSection = () => {
           <p className="mt-2">
             Prefer email? Write to <a href={`mailto:${profile.email}`}>{profile.email}</a>.
           </p>
+          <p className="mt-1">{profile.phone}</p>
         </div>
         <div className="col-span-2">
           <div className="grid gap-8 md:grid-cols-2">
