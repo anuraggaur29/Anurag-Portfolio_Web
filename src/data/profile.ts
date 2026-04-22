@@ -4,7 +4,7 @@ export const profile = {
   title: 'Full Stack Developer - AI & ML Student',
   location: 'Chandigarh, India',
   phone: '+91 7988019566',
-  email: 'anuragshakalya@gmail.com',
+  email: 'anuragpvt999@gmail.com',
   github: 'https://github.com/anuraggaur29',
   linkedin: 'https://www.linkedin.com/in/anuraggaur29',
   resumeUrl: '/Anurag_latest_resume.pdf',

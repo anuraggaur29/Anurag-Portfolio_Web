@@ -7,6 +7,9 @@ import Button from '@/components/form/Button';
 import Input from '@/components/form/Input';
 import TextArea from '@/components/form/Textarea';
 
+const WEB3FORMS_ACCESS_KEY = '314d8a47-84b2-4a87-8b4c-dcf040425553';
+const CONTACT_PAGE_URL = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://aish999.netlify.app'}/contact`;
+
 const Contact = () => {
   const [form, setForm] = React.useState({
     name: '',
@@ -23,23 +26,24 @@ const Contact = () => {
     setStatusMessage('Sending your message...');
 
     try {
-      const response = await fetch('/api/contact', {
+      const formData = new FormData(event.currentTarget);
+
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(form),
+        body: formData,
       });
 
-      const data = (await response.json()) as { message?: string };
+      const data = (await response.json()) as { success?: boolean; message?: string };
 
-      if (!response.ok) {
+      if (!response.ok || !data.success) {
         throw new Error(data.message || 'Unable to send your message');
       }
 
+      alert('Success! Your message has been sent.');
       setStatusMessage('Message sent successfully. I will get back to you soon.');
       setForm({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
+      alert(error instanceof Error ? `Error: ${error.message}` : 'Something went wrong. Please try again.');
       setStatusMessage(error instanceof Error ? error.message : 'Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -71,7 +75,12 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-span-2">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
+              <input type="hidden" name="from_name" value="Anurag Portfolio" />
+              <input type="hidden" name="redirect" value={CONTACT_PAGE_URL} />
+              <input type="hidden" name="Website" value={CONTACT_PAGE_URL} />
+              <input className="hidden" type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" />
               <div className="grid gap-8 md:grid-cols-2">
                 <Input
                   placeholder="Your Name"

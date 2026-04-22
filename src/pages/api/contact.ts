@@ -46,7 +46,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     },
   });
 
-  const toEmail = process.env.CONTACT_TO_EMAIL || smtpUser;
+  const toEmail = process.env.CONTACT_TO_EMAIL || 'anuragpvt999@gmail.com';
   const fromEmail = process.env.CONTACT_FROM_EMAIL || smtpUser;
 
   try {
