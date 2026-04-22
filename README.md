@@ -1,34 +1,37 @@
-# Anurag Gaur Portfolio
+# Anurag Portfolio Website
 
-A responsive personal portfolio website built with Next.js, TypeScript, Tailwind CSS, and SCSS. It is adapted from the MIT-licensed Pofology template from `mostafizurhimself/getprofile`.
+Personal portfolio website built with Next.js, TypeScript, Tailwind CSS, and SCSS.
 
 ## Features
 
-- Home page with animated hero section
-- About, skills, education, experience, services, projects, blog notes, and contact sections
-- Project detail pages
-- Research paper detail pages
-- Dark mode toggle
-- Mobile responsive navigation
+- Modern portfolio homepage with sections for about, education, services, projects, and contact
+- Dedicated project and research detail pages
+- Embedded PDF viewer for research papers
+- Responsive layout for desktop, tablet, and mobile
+- Dark mode support
 
-## Customize
+## Research Papers Included
 
-Update the main profile details in:
+- Survey On Vehicular Communication with AI/ML
+- The Hidden Challenges of Generative AI Bias, Accuracy, and Ethical Concerns
+
+Paper files are served from:
+
+```txt
+public/papers/
+```
+
+## Project Structure (Data Files)
+
+Update profile and content here:
 
 ```txt
 src/data/profile.ts
-```
-
-Update portfolio content in:
-
-```txt
 src/data/works.ts
 src/data/posts.ts
 src/data/educations.ts
 src/data/services.ts
 ```
-
-Add a real resume file to `public/` and update `resumeUrl` in `src/data/profile.ts`.
 
 ## Getting Started
 
@@ -38,7 +41,7 @@ Install dependencies:
 npm install
 ```
 
-Run the development server:
+Start development server:
 
 ```bash
 npm run dev
@@ -50,6 +53,12 @@ Build for production:
 npm run build
 ```
 
+Start production server:
+
+```bash
+npm start
+```
+
 ## License
 
-This project includes code adapted from Pofology, licensed under the MIT License. See `LICENSE`.
+This project is licensed under the MIT License. See `LICENSE`.

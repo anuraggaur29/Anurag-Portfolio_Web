@@ -45,6 +45,7 @@ export type Post = {
   thumbnailUrl: string;
   imageUrl: string;
   authorName: string;
+  pdfUrl: string;
   content: string;
 };
 
