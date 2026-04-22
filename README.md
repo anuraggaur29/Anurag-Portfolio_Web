@@ -59,6 +59,22 @@ Start production server:
 npm start
 ```
 
+## Deploy on Netlify
+
+This project is configured for Netlify using `netlify.toml` and the Next.js runtime plugin.
+
+1. Push your latest code to GitHub.
+2. In Netlify, choose **Add new site** -> **Import an existing project**.
+3. Select this repository: `anuraggaur29/Anurag-Portfolio_Web`.
+4. Build command: `npm run build`
+5. Node version: `20` (already set in `netlify.toml`).
+6. Deploy.
+
+Important static files:
+
+- Resume: `public/Anurag_latest_resume.pdf`
+- Research papers: `public/papers/`
+
 ## License
 
 This project is licensed under the MIT License. See `LICENSE`.

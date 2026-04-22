@@ -26,9 +26,7 @@ export type Work = {
   id: number;
   title: string;
   category: string;
-  thumbnailUrl: string;
-  description?: string;
-  images: string[];
+  description: string;
   previewUrl: string;
   publishedAt: string;
   featureList: string[];

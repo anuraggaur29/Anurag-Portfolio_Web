@@ -5,10 +5,8 @@ export const works: Work[] = [
     id: 1,
     title: 'Problem Solving & DSA Practice',
     category: 'DSA',
-    thumbnailUrl: '/images/works/project-management-system.png',
     description:
       'A continuous problem-solving track focused on Data Structures & Algorithms, OOP concepts, clean implementation, and interview-style coding practice.',
-    images: ['/images/works/project-management-system.png', '/images/works/work-02.png'],
     previewUrl: 'https://github.com/anuraggaur29',
     publishedAt: 'Ongoing',
     featureList: [
@@ -27,10 +25,8 @@ export const works: Work[] = [
     id: 2,
     title: 'News Authenticity Classification System',
     category: 'Machine Learning',
-    thumbnailUrl: '/images/works/digital-marketing-app.png',
     description:
       'An end-to-end ML system for news authenticity classification, built on 20,000+ news samples with real-time prediction access through a Telegram chatbot.',
-    images: ['/images/works/digital-marketing-app.png', '/images/works/social-media-app.png'],
     previewUrl: 'https://github.com/anuraggaur29',
     publishedAt: '2026',
     featureList: [
@@ -50,10 +46,8 @@ export const works: Work[] = [
     id: 3,
     title: 'E-commerce Funnel & Revenue Analysis',
     category: 'Data Analysis',
-    thumbnailUrl: '/images/works/ecommerce.png',
     description:
       'A Python and SQL analysis project that processed 12,500+ user sessions to understand funnel performance, retention, customer value, and revenue opportunities.',
-    images: ['/images/works/ecommerce.png', '/images/works/ecommerce-website-design.png'],
     previewUrl: 'https://github.com/anuraggaur29',
     publishedAt: '2026',
     featureList: [
@@ -73,10 +67,8 @@ export const works: Work[] = [
     id: 4,
     title: 'SQL Customer Purchase Behavior Analysis',
     category: 'SQL',
-    thumbnailUrl: '/images/works/erp-system.png',
     description:
       'A MySQL analysis project that segmented customers by purchase behavior and surfaced revenue concentration, repeat purchase, retention, and CLV insights.',
-    images: ['/images/works/erp-system.png', '/images/works/point-of-sale.png'],
     previewUrl: 'https://github.com/anuraggaur29',
     publishedAt: '2025',
     featureList: [
@@ -95,10 +87,8 @@ export const works: Work[] = [
     id: 5,
     title: 'Academic Performance Analyzer',
     category: 'Python Automation',
-    thumbnailUrl: '/images/works/learning-management-system.png',
     description:
       'A Python and Pandas automation project for processing academic records, detecting subject-level trends, and generating structured reports.',
-    images: ['/images/works/learning-management-system.png', '/images/works/project-management-system.png'],
     previewUrl: 'https://github.com/anuraggaur29',
     publishedAt: '2025',
     featureList: [
@@ -117,10 +107,8 @@ export const works: Work[] = [
     id: 6,
     title: 'Anurag Portfolio Website',
     category: 'Portfolio',
-    thumbnailUrl: '/images/works/portfolio-website.png',
     description:
       'A responsive personal portfolio built with Next.js, TypeScript, Tailwind CSS, dark mode, project pages, blog notes, and a contact section.',
-    images: ['/images/works/portfolio-website.png', '/images/works/work-01.png'],
     previewUrl: 'https://github.com/anuraggaur29/Anurag-Portfolio_Web',
     publishedAt: 'April 2026',
     featureList: ['Responsive layout', 'Dark mode', 'Project detail pages', 'Resume-driven content'],

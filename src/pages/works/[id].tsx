@@ -2,26 +2,10 @@ import { works } from '@/data/works';
 import AppLayout from '@/layouts/AppLayout';
 import { Work } from '@/types';
 import { GetServerSideProps } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
-import Slider, { Settings } from 'react-slick';
-
-const settings: Settings = {
-  dots: false,
-  infinite: false,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  arrows: true,
-};
 
 type Props = {
-  work: Work & {
-    description: string;
-    images: string[];
-    publishedAt: string;
-    previewUrl: string;
-  };
+  work: Work;
 };
 
 const WorkDetail: React.FunctionComponent<Props> = ({ work }) => {
@@ -37,13 +21,6 @@ const WorkDetail: React.FunctionComponent<Props> = ({ work }) => {
           </p>
         </div>
         <div className="mt-10">
-          <Slider {...settings}>
-            {work.images.map((image, index) => (
-              <div className="overflow-hidden rounded-xl" key={index}>
-                <Image src={image} height={720} width={1280} layout="responsive" alt={work.title} />
-              </div>
-            ))}
-          </Slider>
           <div className="mt-6 flex justify-center">
             <Link legacyBehavior href={work.previewUrl}>
               <a className="btn">Live Preview</a>

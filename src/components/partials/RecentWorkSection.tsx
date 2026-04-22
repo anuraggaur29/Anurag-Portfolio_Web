@@ -13,7 +13,6 @@ const RecentWorkSection = () => {
           .map((work) => (
             <Portfolio
               key={work.id}
-              imageUrl={work.thumbnailUrl}
               category={work.category}
               title={work.title}
               href={`/works/${work.id}`}

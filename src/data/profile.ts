@@ -7,7 +7,7 @@ export const profile = {
   email: 'anuragshakalya@gmail.com',
   github: 'https://github.com/anuraggaur29',
   linkedin: 'https://www.linkedin.com/in/anuraggaur29',
-  resumeUrl: '#',
+  resumeUrl: '/Anurag_latest_resume.pdf',
   summary:
     'Computer Science undergraduate in the 2027 AI & ML batch with solid foundations in Python, SQL, and Data Structures & Algorithms. Experienced in building end-to-end solutions from data pipelines and ML models to real-time deployments.',
   skills: {
