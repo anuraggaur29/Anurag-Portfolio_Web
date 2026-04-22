@@ -59,6 +59,32 @@ Start production server:
 npm start
 ```
 
+## Contact Form Email Setup
+
+The Contact form sends real emails through the API route:
+
+```txt
+POST /api/contact
+```
+
+Add these environment variables in local `.env.local` and in Netlify Site Settings -> Environment Variables:
+
+```txt
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=your-email@example.com
+SMTP_PASS=your-app-password
+CONTACT_TO_EMAIL=your-email@example.com
+CONTACT_FROM_EMAIL=your-email@example.com
+```
+
+Notes:
+
+- For Gmail, use an App Password (not your normal account password).
+- If using port `465`, set `SMTP_SECURE=true`.
+- `CONTACT_TO_EMAIL` is the inbox where messages are delivered.
+
 ## Deploy on Netlify
 
 This project is configured for Netlify using `netlify.toml` and the Next.js runtime plugin.
