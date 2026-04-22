@@ -1,0 +1,46 @@
+@use 'partials/fonts';
+@use 'partials/header';
+@use 'partials/utils';
+@use 'partials/components';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-100;
+  overflow-x: hidden;
+}
+
+.hero {
+  @apply h-screen;
+  // min-height: 768px;
+}
+
+.container {
+  @apply mx-auto max-w-xl px-6 md:max-w-4xl lg:max-w-7xl;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  @apply text-gray-300;
+}
+.slick-dots {
+  li {
+    @apply m-0;
+
+    button:before {
+      @apply text-xs dark:text-gray-400;
+    }
+
+    &:hover button:before {
+      @apply text-gray-400;
+    }
+  }
+
+  li.slick-active {
+    button:before {
+      @apply text-primary-500;
+    }
+  }
+}
