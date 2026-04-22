@@ -6,7 +6,7 @@ import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
 import HeroBackground from './HeroBackground';
 
 const HeroSection = () => {
-  const roles = useMemo(() => ['AI & ML Student', 'Python Developer', 'Data Analyst', 'Problem Solver'], []);
+  const roles = useMemo(() => ['Full Stack Developer', 'AI & ML Student', 'Data Analyst', 'Problem Solver'], []);
   const [roleIndex, setRoleIndex] = useState(0);
   const [visibleLetters, setVisibleLetters] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);

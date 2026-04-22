@@ -6,14 +6,14 @@ import AppLayout from '@/layouts/AppLayout';
 
 const work = () => {
   return (
-    <AppLayout title="Works">
+    <AppLayout title="Projects">
       <PageTitle
         breadcrumb={[
           { label: 'Home', path: '/' },
-          { label: 'Works', path: '' },
+          { label: 'Projects', path: '' },
         ]}
       >
-        Works
+        Projects
       </PageTitle>
 
       <div className="container py-10">

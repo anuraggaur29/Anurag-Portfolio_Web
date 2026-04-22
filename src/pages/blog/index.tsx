@@ -6,14 +6,14 @@ import AppLayout from '@/layouts/AppLayout';
 
 const Blog = () => {
   return (
-    <AppLayout title="Blog">
+    <AppLayout title="Research">
       <PageTitle
         breadcrumb={[
           { label: 'Home', path: '/' },
-          { label: 'Blog', path: '' },
+          { label: 'Research', path: '' },
         ]}
       >
-        Blog
+        Research
       </PageTitle>
       <div className="container py-10">
         <div className="grid gap-8 sm:gap-4 md:grid-cols-3 lg:gap-8">

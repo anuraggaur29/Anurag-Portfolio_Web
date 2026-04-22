@@ -3,6 +3,28 @@ import { Work } from '@/types';
 export const works: Work[] = [
   {
     id: 1,
+    title: 'Problem Solving & DSA Practice',
+    category: 'DSA',
+    thumbnailUrl: '/images/works/project-management-system.png',
+    description:
+      'A continuous problem-solving track focused on Data Structures & Algorithms, OOP concepts, clean implementation, and interview-style coding practice.',
+    images: ['/images/works/project-management-system.png', '/images/works/work-02.png'],
+    previewUrl: 'https://github.com/anuraggaur29',
+    publishedAt: 'Ongoing',
+    featureList: [
+      'Practicing arrays, strings, hashing, recursion, stacks, queues, trees, graphs, and dynamic programming',
+      'Writing clean solutions with readable naming and clear edge-case handling',
+      'Strengthening time and space complexity analysis',
+      'Applying problem-solving patterns to coding interview preparation',
+    ],
+    attributes: [
+      { name: 'Focus', value: 'Data Structures & Algorithms' },
+      { name: 'Languages', value: 'Python, Java' },
+      { name: 'Concepts', value: 'OOP, complexity analysis, problem solving' },
+    ],
+  },
+  {
+    id: 2,
     title: 'News Authenticity Classification System',
     category: 'Machine Learning',
     thumbnailUrl: '/images/works/digital-marketing-app.png',
@@ -25,7 +47,7 @@ export const works: Work[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'E-commerce Funnel & Revenue Analysis',
     category: 'Data Analysis',
     thumbnailUrl: '/images/works/ecommerce.png',
@@ -48,7 +70,7 @@ export const works: Work[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'SQL Customer Purchase Behavior Analysis',
     category: 'SQL',
     thumbnailUrl: '/images/works/erp-system.png',
@@ -70,7 +92,7 @@ export const works: Work[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Academic Performance Analyzer',
     category: 'Python Automation',
     thumbnailUrl: '/images/works/learning-management-system.png',
@@ -92,7 +114,7 @@ export const works: Work[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Anurag Portfolio Website',
     category: 'Portfolio',
     thumbnailUrl: '/images/works/portfolio-website.png',

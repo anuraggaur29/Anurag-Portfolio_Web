@@ -7,7 +7,7 @@ A responsive personal portfolio website built with Next.js, TypeScript, Tailwind
 - Home page with animated hero section
 - About, skills, education, experience, services, projects, blog notes, and contact sections
 - Project detail pages
-- Blog detail pages
+- Research paper detail pages
 - Dark mode toggle
 - Mobile responsive navigation
 
@@ -24,10 +24,8 @@ Update portfolio content in:
 ```txt
 src/data/works.ts
 src/data/posts.ts
-src/data/experiences.ts
 src/data/educations.ts
 src/data/services.ts
-src/data/reviews.ts
 ```
 
 Add a real resume file to `public/` and update `resumeUrl` in `src/data/profile.ts`.

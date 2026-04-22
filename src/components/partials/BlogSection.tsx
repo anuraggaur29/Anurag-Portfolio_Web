@@ -5,7 +5,7 @@ import SectionTitle from '@/components/shared/SectionTitle';
 const BlogSection = () => {
   return (
     <>
-      <SectionTitle>Latest Posts</SectionTitle>
+      <SectionTitle>Research</SectionTitle>
       <div className="mt-10 grid gap-8 sm:gap-4 md:grid-cols-3 lg:gap-8">
         {posts
           .filter((_, index) => index < 3)

@@ -39,7 +39,7 @@ const AboutSection = () => {
 
           <div className="">
             <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">ML</h6>
+              <h6 className="font-semibold">Full Stack Dev</h6>
               <p>82%</p>
             </div>
             <ProgressBar color="rose" progress={82} />

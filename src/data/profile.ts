@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Anurag',
   brand: 'Anurag',
-  title: 'Computer Science Undergraduate - AI & ML',
+  title: 'Full Stack Developer - AI & ML Student',
   location: 'Chandigarh, India',
   phone: '+91 7988019566',
   email: 'anuragshakalya@gmail.com',
@@ -11,11 +11,11 @@ export const profile = {
   summary:
     'Computer Science undergraduate in the 2027 AI & ML batch with solid foundations in Python, SQL, and Data Structures & Algorithms. Experienced in building end-to-end solutions from data pipelines and ML models to real-time deployments.',
   skills: {
-    languages: ['Python', 'SQL', 'Java (basic)'],
+    languages: ['Python', 'SQL', 'Java (basic)', 'JavaScript', 'TypeScript'],
     libraries: ['Pandas', 'NumPy', 'Scikit-Learn'],
     databases: ['MySQL', 'SQLite'],
-    tools: ['Git', 'GitHub', 'Jupyter Notebook', 'VS Code', 'Power BI', 'Excel'],
-    concepts: ['Data Structures & Algorithms', 'OOP', 'Problem Solving'],
+    tools: ['Git', 'GitHub', 'Jupyter Notebook', 'VS Code', 'Power BI', 'Excel', 'React', 'Next.js', 'Node.js'],
+    concepts: ['Full Stack Development', 'Data Structures & Algorithms', 'OOP', 'Problem Solving'],
   },
   certifications: [
     'Microsoft Azure AI Fundamentals (AI-900)',

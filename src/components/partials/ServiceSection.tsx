@@ -24,8 +24,8 @@ const getBackgroundClass = (index: number) => {
 const ServiceSection = () => {
   return (
     <>
-      <SectionTitle>Services</SectionTitle>
-      <div className="mt-10 grid gap-8 md:grid-cols-3">
+      <SectionTitle>I Can Do</SectionTitle>
+      <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((service, index) => (
           <div
             key={index}
@@ -38,9 +38,9 @@ const ServiceSection = () => {
         ))}
       </div>
       <p className="mt-8 text-center">
-        Looking for a custom service?{' '}
+        Want to discuss a role or project?{' '}
         <Link legacyBehavior href="/contact">
-          <a>Click here to contact me! &#128079;</a>
+          <a>Click here to contact me!</a>
         </Link>
       </p>
     </>
